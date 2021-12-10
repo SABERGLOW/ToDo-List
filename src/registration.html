@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		/>
+		<title>Homework – Wali Ullah, WTW2SV</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button
+					type="button"
+					class="navbar-toggle"
+					data-toggle="collapse"
+					data-target=".navbar-ex1-collapse"
+				>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">Homework 2</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="./index.html">Home</a></li>
+				</ul>
+				<form
+					class="navbar-form navbar-right"
+					role="login"
+					action="./todo.html"
+				>
+					<div class="form-group">
+						<input
+							type="email"
+							required
+							class="form-control"
+							placeholder="Email"
+						/>
+					</div>
+
+					<div class="form-group">
+						<input
+							type="password"
+							required
+							class="form-control"
+							placeholder="Password"
+						/>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Login</button>
+					<a href="./registration.html" class="btn btn-default"
+						>Registration</a
+					>
+				</form>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Registration</h3>
+				</div>
+				<div class="panel-body">
+					<form action="todo.html" role="form">
+						<div class="form-group row">
+							<label
+								for="input-id"
+								class="col-sm-2 col-form-label"
+								>Email</label
+							>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="glyphicon glyphicon-user"></i>
+								</div>
+								<input
+									type="email"
+									required
+									class="form-control"
+									id=""
+									placeholder="someone@somewhere.com"
+								/>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label
+								for="input-id"
+								class="col-sm-2 col-form-label"
+								>Password</label
+							>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="glyphicon glyphicon-lock"></i>
+								</div>
+								<input
+									type="password"
+									required
+									class="form-control"
+									id=""
+									placeholder="some random password"
+								/>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label
+								for="input-id"
+								class="col-sm-2 col-form-label"
+								>Age</label
+							>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="glyphicon glyphicon-calendar"></i>
+								</div>
+								<input
+									type="number"
+									min="18"
+									max="99"
+									class="form-control"
+									id=""
+									placeholder="when were you born?"
+								/>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label
+								for="input-id"
+								class="col-sm-2 col-form-label"
+								>Introduction
+							</label>
+							<div class="col-sm-10">
+								<textarea
+									name=""
+									id="input"
+									class="form-control"
+									rows="5"
+								></textarea>
+							</div>
+						</div>
+
+						<div class="form-group row pull-right">
+							<a href="./index.html" class="btn btn-danger">
+								Cancel
+							</a>
+							<button type="submit" class="btn btn-primary">
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
